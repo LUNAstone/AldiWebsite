@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         
-        <link rel="stylesheet" href="/CSS/about.css">
+        <link rel="stylesheet" href="about.css">
         
-        <title>About US || Aldi UK</title>
+        <title>About Us || Aldi UK</title>
     </head>
     
     <body>
@@ -14,9 +14,16 @@
         
         <div class="nav">
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/HTML/store.html">Store</a></li>
-                <li style="float:right"><a class="active" href="/HTML/about.html">About</a></li>
+              <li><a href="index.html">Home</a></li>
+	      <li class="dropdown">
+		<a class="dropbtn" href="store.html">Store</a>
+		<div class="dropdown-content">
+		  <a href="groceries.html">Groceries</a>
+		  <a href="tech.html">Technology</a>
+		</div>
+	      </li>
+	      <li><a href="events.html">Events</a></li>
+              <li style="float:right"><a class="active" href="about.html">About</a></li>
             </ul>
         </div>
         
