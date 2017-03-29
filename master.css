@@ -12,6 +12,7 @@ html {
 
 header {
     background-color: #036;
+    display: inline-block;
 }
 
 header img {
