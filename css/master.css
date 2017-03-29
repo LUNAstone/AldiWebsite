@@ -1,6 +1,6 @@
 html {
     margin: 0 auto;
-    width: 1400px;
+    width: 60%;
     font-size: 100%;
     font-family: sans-serif;
 }
@@ -12,7 +12,6 @@ html {
 
 header {
     background-color: #036;
-    display: inline-block;
 }
 
 header img {
@@ -24,8 +23,8 @@ header img {
 header h1 {
     text-align: left;
     position: absolute;
-    left: 350px;
-    top: 10px;
+    top: 0.5%;
+    left: 45%;
     font-family: "Aharoni", sans-serif;
     font-size: 3em;
     color: #FFF;

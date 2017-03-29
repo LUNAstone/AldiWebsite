@@ -4,14 +4,50 @@
 <head>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="css/master.css">
 
     <title>About Us || Aldi UK</title>
 </head>
 
+<style>
+    .header {
+        text-align: center;
+    }
+    
+    .contents ol {
+        counter-reset: item;
+    }
+    
+    .contents li {
+        display: block;
+    }
+    
+    .contents li:before {
+        content: counters(item, ".")" ";
+        counter-increment: item;
+    }
+    
+    .contact table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .contact th {
+        height: 50px;
+        text-align: center;
+    }
+    
+    .contact table, th, td {
+        text-align: left;
+        border: 1px solid black;
+    }
+</style>
+
 <body>
     <header>
-        <img src="images/ALDILogo.png" alt="Aldi Logo" height="100">
+        <a href="index.html">
+            <img src="images/ALDILogo.png" alt="Aldi Logo" height="100">
+        </a>
         <h1>Aldi UK</h1>
         <div class="splitter" />
     </header>
@@ -27,11 +63,97 @@
                 </div>
             </li>
             <li><a href="events.html">Events</a></li>
-            <li style="float:right"><a class="active" href="about.html">About</a></li>
+            <li style="float:right"><a class="active" href="#">About</a></li>
         </ul>
     </nav>
 
     <article>
+        <div class="header">
+            <img src="images/aboutusheader.jpg" width="75%" alt="About Us">
+        </div>
+        
+        <div class="contents">
+            <h3>Contents</h3>
+            <ol>
+                <li>
+                    <a href="#did-you-know">Did you know?</a>
+                </li>
+                <li>
+                    <a href="#supplier">Our Dedication to Our Suppliers</a>
+                </li>
+                <li>
+                    <a href="#contact">How to Contact Us</a>
+                </li>
+            </ol>
+        </div>
+        
+        <hr width="60%">
+        
+        <div id="did-you-know" class="did-you-know">
+            <h3>Did you know?</h3>
+            <ul>
+                <li>
+                    Aldi was first created in Germany by Karl and Theo Albrecht in 1946. They aimed to create a supermarket where people who didn't have much money would be able to get good groceries for much cheaper than the larger supermarkets.
+                </li>
+                <li>
+                    The name 'Aldi' comes from the German full name: "<strong>Al</strong>brecht <strong>Di</strong>skont"
+                </li>
+                <li>
+                    Aldi is actually two different companies across the whole world. There are Aldi Nord (North) and Aldi Süd (South). Aldi UK is a part of Aldi Süd!
+                </li>
+            </ul>
+        </div>
+        
+        <hr width="60%">
+        
+        <div id="suppliers" class="suppliers">
+            <h3>Our Dedication to Our Suppliers</h3>
+            <p>
+                <strong>We're committed to sourcing our products from the UK</strong>, championing Great British quality is one of our main goals.
+            </p>
+            <p>
+                All meat and milk is British-made and from Red Tractor approved farms. And that isn't just an overblown clai, 94% of our customers in a 1000 person sample believed that we adhered to the grocery code of practice standard across Britain.
+            </p>
+            <p>
+                <strong>We also have strong ties with the Rainforest Alliance and Fairtrade</strong>, selling a range of certified products across Great Britain amassed for over <u>twelve million pounds</u> worth of sales in Britain and Ireland!
+            </p>
+        </div>
+        
+        <hr width="60%">
+        
+        <div id="contact" class="contact">
+            <h3>How to Contact Us</h3>
+            <p>
+                Here at Aldi, we are dedicated to creating the best experience in our stores for all of our customers. If you have a problem with our store and would like to report it, please do not hesitate to <strong>contact us by</strong>:
+            </p>
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Detail</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><a href="mailto:customer.service@aldi.co.uk">customer.service@aldi.co.uk</a></td>
+                </tr>
+                <tr>
+                    <td>Telephone</td>
+                    <td>0800 042 0800</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        Aldi Stores,
+                        Holly Lane,
+                        Atherstone,
+                        Warwickshire
+                        CV9 2SQ
+                    </td>
+                </tr>
+            </table>
+            <p>
+                We are always happy to respond to any issues you may have and we will get back to you as soon as we can. Please leave <strong>2-3 working days</strong> for us to properly answer any question you may have.
+            </p>
+        </div>
     </article>
 
     <footer>
