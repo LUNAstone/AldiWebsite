@@ -5,6 +5,10 @@ html {
     font-family: sans-serif;
 }
 
+.splitter {
+    padding: 10px 0px 10px 0px;
+}
+
 
 /*
     Header
@@ -28,10 +32,6 @@ header h1 {
     font-family: "Aharoni", sans-serif;
     font-size: 3em;
     color: #FFF;
-}
-
-header div {
-    padding: 10px 0px 10px 0px;
 }
 
 
@@ -114,6 +114,7 @@ nav li.dropdown {
 
 footer {
     color: #fff;
+    clear: both;
     margin-top: 20px;
     margin-bottom: 0px;
 }
