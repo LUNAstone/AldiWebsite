@@ -9,6 +9,21 @@
     <title>Technology || Aldi UK</title>
 </head>
 
+<style>
+    .contents ol {
+        counter-reset: item;
+    }
+    
+    .contents li {
+        display: block;
+    }
+    
+    .contents li:before {
+        content: counters(item, ".")" ";
+        counter-increment: item;
+    }
+</style>
+
 <body>
     <header>
         <a href="index.html">
@@ -34,6 +49,84 @@
     </nav>
 
     <article>
+        <!-- 
+            * Kinds of technology - do a contents like about
+                - Computers (Laptops, Desktop)
+                - Phones (Pay-As-You-Go Phones, Smart Phones)
+                - TVs
+                - Accessories
+                - Consoles and Games
+        -->
+        <h1>Our Store</h1>
+        <h2>Groceries</h2>
+
+        <div class="contents">
+            <h3>Contents</h3>
+            <ol>
+                <li>
+                    <a href="#computers">Computers</a>
+                    <ol>
+                        <li>
+                            <a href="#computers-1">Laptops</a>
+                        </li>
+                        <li>
+                            <a href="#computers-2">Desktop PCs</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#phones">Mobile Phones</a>
+                    <ol>
+                        <li>
+                            <a href="#phones-1">Pay-As-You-Go Phones</a>
+                        </li>
+                        <li>
+                            <a href="#phones-2">Smart Phones</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#tv">Televisions</a>
+                </li>
+                <li>
+                    <a href="#accessories">Accessories</a>
+                </li>
+                <li>
+                    <a href="#games">Video Games and Consoles</a>
+                </li>
+            </ol>
+        </div>
+
+        <hr width="60%">
+
+        <div id="computers" class="computers">
+            <div id="computers-1" class="computers-1">"
+            
+            </div>
+            <div id="computers-2" class="computers-2">
+            
+            </div>
+        </div>
+
+        <hr width="60%">
+
+        <div id="phones" class="phones">
+        </div>
+
+        <hr width="60%">
+
+        <div id="tv" class="tv">
+        </div>
+
+        <hr width="60%">
+
+        <div id="accessories" class="accessories">
+        </div>
+
+        <hr width="60%">
+
+        <div id="games" class="games">
+        </div>
     </article>
 
     <footer>

@@ -9,6 +9,44 @@
     <title>Groceries in our Store || Aldi UK</title>
 </head>
 
+<style>
+    /*
+        Contents
+    */
+    .contents ol {
+        counter-reset: item;
+    }
+    
+    .contents li {
+        display: block;
+    }
+    
+    .contents li:before {
+        content: counters(item, ".")" ";
+        counter-increment: item;
+    }
+
+    /*
+        Table
+    */
+
+    .tablemain {
+        padding-bottom: 5%;
+    }
+
+    .tableheader {
+        border-bottom: 1px solid black;
+    }
+
+    .tablerow:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .tabledata {
+        text-align: center;
+    }
+</style>
+
 <body>
     <header>
         <a href="index.html">
@@ -22,9 +60,9 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li class="dropdown">
-                <a class="active" class="dropbtn" href="#">Store</a>
+                <a class="active" class="dropbtn" href="store.html">Store</a>
                 <div class="dropdown-content">
-                    <a class="active" href="groceries.html">Groceries</a>
+                    <a class="active" href="#">Groceries</a>
                     <a href="tech.html">Technology</a>
                 </div>
             </li>
@@ -34,6 +72,219 @@
     </nav>
 
     <article>
+        <h1>Our Store</h1>
+        <h2>Groceries</h2>
+
+        <div class="contents">
+            <h3>Contents</h3>
+            <ol>
+                <li>
+                    <a href="#meat">Meat & Poultry</a>
+                </li>
+                <li>
+                    <a href="#produce">Produce</a>
+                </li>
+                <li>
+                    <a href="#beverages">Beverages</a>
+                </li>
+                <li>
+                    <a href="#baked">Baked Goods</a>
+                </li>
+                <li>
+                    <a href="#dairy">Dairy Products</a>
+                </li>
+            </ol>
+        </div>
+
+        <hr width="60%">
+
+        <div id="meat" class="meat">
+            <h4 align="center">Meat & Poultry</h4>
+            <table class="tablemain" width="70%" align="center">
+                <tr class="tablerow">
+                    <th class="tableheader">Name Of Item</th>
+                    <th class="tableheader">Picture</th>
+                    <th class="tableheader">Price</th>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">21 Day Matured Rib Eye Steak</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/21-Day-Matured-Rib-Eye-Steak-A.jpg?o=Dcym%248RlaQ%40YVxKkRHwei3lAUGwj&V=bt4d&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£3.09</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Ashfield Farm Turkey Breast Steaks</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Turkey-Breast-Steaks-A.jpg?o=W5qHGBi7mjtxBxQ%2493REsfNuscoj&V=qMKq&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£2.59</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">8 Cumberland Sausages</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Cumberland-Sausages-A.jpg?o=Orj2oMq4JVetqcCdbLUq%24spbiGYj&V=gUJS&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£0.85</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Duck Breast Portions</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Duck-Breast-Portions-A.jpg?o=1UdACKR%24sGFlYITaFdHobqyctHEj&V=cymr&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£3.29</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Chicken With Cheese & Leek Gratin</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Chicken-With-Cheese-&-Leek-Gratin-A.jpg?o=uvwHkvkfbTGH2W73sNasRvE0nS0j&V=z0QS&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£2.99</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr width="60%">
+
+        <div id="produce" class="produce">
+            <h4 align="center">Produce</h4>
+            <table class="tablemain" width="70%" align="center">
+                <tr class="tablerow">
+                    <th class="tableheader">Name Of Item</th>
+                    <th class="tableheader">Picture</th>
+                    <th class="tableheader">Price</th>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Granny Smith Apples</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Granny-Smith-Apples-A.jpg?o=dzmyvgGANjzeAUPn8wGozFYvURAj&V=1RAI&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£1.35</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Mango Chunks</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Mango-Chunks-A.jpg?o=vQzCIz095S%40CTv4PYS%24BRJK7N0cj&V=1%40GI&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£1.89</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Celery</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Celery-A.jpg?o=Yx1StRe7rIeUs2cp87bovLtWLHkj&V=k7BR&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£0.53</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Stuffed Mushrooms</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Stuffed-Mushrooms-A.jpg?o=wNRzCKlYqvCUAVLOxe4%244fdULR8j&V=SXe0&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£1.89</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Mild Onions</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Mild-Onions-A.jpg?o=QdS5WMKrzry64blLjrfh%40brljc4j&V=E63h&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£0.99</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr width="60%">
+
+        <div id="beverages" class="beverages">
+            <h4 align="center">Beverages</h4>
+            <table class="tablemain" width="70%" align="center">
+                <tr class="tablerow">
+                    <th class="tableheader">Name Of Item</th>
+                    <th class="tableheader">Picture</th>
+                    <th class="tableheader">Price</th>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Taurus Pear Cider 4x440ml</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Taurus-Pear-Cider-4-x-440ml-A.jpg?o=x0rm6OgqFKdjRn8YJT%24gq3NT%24eAj&V=ABwB&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£1.99</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Speyside Single Malt Whiskey</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Speyside-Single-Malt-Whisky-A.jpg?o=2t2Oo0%242TzgBLXXPhUjRr38ldGkj&V=PlIO&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£17.49</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Cocobay White Rum & Coconut</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Cocobay-White-Rum-&-Coconut-A.jpg?o=6MBF%24CdW1Kf0rA1GyAAnlos0cusj&V=KA3S&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£3.99</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Tamova Vodka</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Tamova-Vodka-A.jpg?o=YyQU9eBhwI0bPwEnIfUMLmYHb8Qj&V=8gqM&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£9.97</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Bellucci Amaretto Liqueur</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Bellucci-Amaretto-Liqueur-A.jpg?o=aWnbqWEpBOrRvJf76CTB9yoA2X4j&V=RA2v&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£4.69</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr width="60%">
+
+        <div id="baked" class="baked">
+            <h4 align="center">Baked Goods</h4>
+            <table class="tablemain" width="70%" align="center">
+                <tr class="tablerow">
+                    <th class="tableheader">Name Of Item</th>
+                    <th class="tableheader">Picture</th>
+                    <th class="tableheader">Price</th>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Everyday Essentials 10-Pack Scones</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Everyday-Essentials-10-Pack-Scones-A.jpg?o=%401v%24A6bMtq5GhTAyQr9u7n2ri94j&V=wIff&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£0.49</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Specially Selected Luxury Croissants</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Specially-Selected-Luxury-Croissants-A.jpg?o=U5fb9hQvfXRJM62RQJRYIcfdrWsj&V=s56N&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£1.65</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Fresh Egg Waffles</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Fresh-Egg-Waffles-A.jpg?o=vMSazjYqf63v0UkMYQx0ZTISJp0j&V=kgsj&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£0.75</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Belgian Buns</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Belgian-Buns-A.jpg?o=L1YOfFqHOtQpi97FgJODQmAGaEgj&V=i8Cf&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£0.85</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Poppadoms</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Poppadoms-A.jpg?o=uZ4FTdVV1Hc0AWnb2%24WQmBKPYdkj&V=2G4S&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£0.85</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr width="60%">
+
+        <div id="dairy" class="dairy">
+            <h4 align="center">Dairy Products</h4>
+            <table class="tablemain" width="70%" align="center">
+                <tr class="tablerow">
+                    <th class="tableheader">Name Of Item</th>
+                    <th class="tableheader">Picture</th>
+                    <th class="tableheader">Price</th>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Single Cream</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Single-Cream-A.jpg?o=vsIqx6zo4hJyIoesGxmZp5ReNFQj&V=i4sU&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£0.65</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">12-Pack Large Free Range Eggs</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/12-PACK-LARGE-FREE-RANGE-EGGS-A.jpg?o=IhdU8lCC0pG%40%40eXvG9l0vqIMtioj&V=NflR&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£1.75</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Perfect for Baking</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/PERFECT-FOR-BAKING-A.jpg?o=r44WriIFKTCDxAg6ssS%40P9XDFP0j&V=x4fa&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£0.39</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Greenvale Spreadable</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/GREENVALE-SPREADABLE-A.jpg?o=SjxDcthnE6kg0laEJStp%24u8hCRsj&V=JNgX&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£1.59</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tabledata">Semi-Skimmed Milk 4 Pints</td>
+                    <td class="tabledata" align="center"><img src="https://cdn.aldi-digital.co.uk/Semi-Skimmed-Milk-4-Pints.jpg?o=v9kt2gx2AclzNSqRcrNL5vbeinQj&V=1hTc&w=178&h=223&p=2&q=88" width="150"></td>
+                    <td class="tabledata">£0.99</td>
+                </tr>
+            </table>
+        </div>
     </article>
 
     <footer>
