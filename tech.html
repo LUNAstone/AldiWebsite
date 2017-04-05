@@ -10,6 +10,9 @@
 </head>
 
 <style>
+    /*
+        Contents
+    */
     .contents ol {
         counter-reset: item;
     }
@@ -21,6 +24,26 @@
     .contents li:before {
         content: counters(item, ".")" ";
         counter-increment: item;
+    }
+
+    /*
+        Table
+    */
+
+    .tablemain {
+        padding-bottom: 5%;
+    }
+
+    .tableheader {
+        border-bottom: 1px solid black;
+    }
+
+    .tablerow:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .tabledata {
+        text-align: center;
     }
 </style>
 
@@ -49,14 +72,6 @@
     </nav>
 
     <article>
-        <!-- 
-            * Kinds of technology - do a contents like about
-                - Computers (Laptops, Desktop)
-                - Phones (Pay-As-You-Go Phones, Smart Phones)
-                - TVs
-                - Accessories
-                - Consoles and Games
-        -->
         <h1>Our Store</h1>
         <h2>Groceries</h2>
 
@@ -92,7 +107,15 @@
                     <a href="#accessories">Accessories</a>
                 </li>
                 <li>
-                    <a href="#games">Video Games and Consoles</a>
+                    <a href="#games">Games</a>
+                    <ol>
+                        <li>
+                            <a href="#games-1">Consoles</a>
+                        </li>
+                        <li>
+                            <a href="#games-2">Video Games</a>
+                        </li>
+                    </ol>
                 </li>
             </ol>
         </div>
@@ -100,32 +123,55 @@
         <hr width="60%">
 
         <div id="computers" class="computers">
+            <h4 align="center">Computer</h4>
+
             <div id="computers-1" class="computers-1">"
-            
+                <h6 align="center">Laptops</h6>
             </div>
+
             <div id="computers-2" class="computers-2">
-            
+                <h6 align="center">Desktop PCs</h6>
             </div>
         </div>
 
         <hr width="60%">
 
         <div id="phones" class="phones">
+            <h4 align="center">Mobile Phones</h4>
+
+            <div id="phones-1" class="phones-1">
+                <h6 align="center">Pay-As-You-Go Phones</h6>
+            </div>
+
+            <div id="phones-2" class="phones-2">
+                <h6 align="center">Smart Phones</h6>
+            </div>
         </div>
 
         <hr width="60%">
 
         <div id="tv" class="tv">
+            <h4 align="center">Televisions</h4>
         </div>
 
         <hr width="60%">
 
         <div id="accessories" class="accessories">
+            <h4 align="center">Accessories</h4>
         </div>
 
         <hr width="60%">
 
         <div id="games" class="games">
+            <h4 align="center">Games</h4>
+
+            <div id="games-1" class="games-1">
+                <h6 align="center">Consoles</h6>
+            </div>
+
+            <div id="games-2" class="games-2">
+                <h6 align="center">Video Games</h6>
+            </div>
         </div>
     </article>
 
